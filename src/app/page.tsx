@@ -1,65 +1,364 @@
+"use client";
+
 import Image from "next/image";
+import { Skill } from "@/components/skills";
+import useEmblaCarousel from "embla-carousel-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Mail,
+  Linkedin,
+  Github,
+  Link,
+  MessageCircle,
+  ExternalLink,
+} from "lucide-react";
+import { Project } from "@/components/projects";
+import { Heading } from "@/components/headings";
 
 export default function Home() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    slidesToScroll: 1,
+    align: "start",
+  });
+
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="flex-1 flex flex-col gap-xxl pb-xxl">
+      <section className="m-auto w-full my-xxl max-w-300 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-lg">
+        <section className="flex flex-col gap-lg" data-aos="zoom-in">
+          <span className="font-text text-(--color-text-muted) text-size-md">
+            Desenvolvedor Front-End
+          </span>
+          <h1 className="font-heading font-semibold text-size-xl lg:text-size-xxl text-(--color-text)">
+            Sou Renan Guerra
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="font-text text-size-md text-(--color-text-muted)">
+            Next.JS - TypeScript - TailwindCSS <br /> React - HTML5 - CSS3 -
+            JavaScript
           </p>
+          <div className="flex gap-sm w-full justify-between items-center font-heading text-sm">
+            <a
+              href="/assets/CV_RenanGuerra.pdf"
+              download="CV_RenanGuerra.pdf"
+              type="application/pdf"
+              className="w-1/2 text-center p-2 shadow-md bg-linear-to-br from-gradient to-(--color-primary) rounded-md transition-all hover:scale-105 duration-300 text-(--color-secondary) font-semibold hover:from-(--color-primary) hover:to-gradient"
+            >
+              Download CV
+            </a>
+            <a
+              href="#proj"
+              className="w-1/2 text-center bg-(--color-secondary) p-2 shadow-md rounded-md transition-all hover:scale-105 duration-300 border border-(--color-secondary) text-(--color-text) hover:border-(--color-primary)"
+            >
+              Projetos
+            </a>
+          </div>
+        </section>
+        <Image
+          src="/images/mainimage.webp"
+          alt="Renan Guerra"
+          width={270}
+          height={270}
+          className="object-cover object-center rounded-3xl shadow-lg"
+          data-aos="zoom-in"
+        ></Image>
+      </section>
+      <section
+        id="skills"
+        className="m-auto flex flex-col justify-center max-w-230 gap-xxl lg:w-full mb-xxl"
+        data-aos="fade-up"
+      >
+        <Heading title="Habilidades"></Heading>
+
+        <div className="grid grid-cols-2 gap-lg md:grid-cols-3 lg:grid-cols-5">
+          <Skill
+            name="NextJS"
+            logo="/images/icons/icons8-nextjs.svg"
+            alt="NextJS logo"
+          ></Skill>
+          <Skill
+            name="TypeScript"
+            logo="/images/icons/icons8-typescript.svg"
+            alt="TypeScript logo"
+          ></Skill>
+          <Skill
+            name="TailwindCSS"
+            logo="/images/icons/icons8-tailwind-css.svg"
+            alt="Tailwind logo"
+          ></Skill>
+          <Skill
+            name="React"
+            logo="/images/icons/icons8-react.svg"
+            alt="React logo"
+          ></Skill>
+          <Skill
+            name="HTML5"
+            logo="/images/icons/icons8-html5.svg"
+            alt="HTML5 logo"
+          ></Skill>
+          <Skill
+            name="CSS3"
+            logo="/images/icons/icons8-css3.svg"
+            alt="CSS3 logo"
+          ></Skill>
+          <Skill
+            name="JavaScript"
+            logo="/images/icons/icons8-javascript.svg"
+            alt="JavaScript logo"
+          ></Skill>
+          <Skill
+            name="Git/Github"
+            logo="/images/icons/icons8-git.svg"
+            alt="Git logo"
+          ></Skill>
+          <Skill
+            name="Figma"
+            logo="/images/icons/icons8-figma.svg"
+            alt="Figma logo"
+          ></Skill>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      <section
+        id="proj"
+        className="m-auto flex flex-col justify-center w-full max-w-230 gap-xxl"
+      >
+        <Heading title="Projetos"></Heading>
+
+        <div className="embla">
+          <div
+            ref={emblaRef}
+            className="embla__viewport overflow-hidden w-full px-md"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            <div className="embla__container flex">
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Portfolio"
+                  description="Meu Site/Portfolio"
+                  techno="NextJS + TypeScript + TailwindCSS"
+                  href="#"
+                  src="/images/projects/portfoliopage.webp"
+                  alt="Portfolio Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Da Vinci Website"
+                  description="E se Leonardo Da Vinci tivesse um site hoje em dia? Loja e Landing Page"
+                  techno="NextJS + TypeScript + TailwindCSS"
+                  href="https://leo-da-vinci-website.vercel.app/"
+                  src="/images/projects/davinciprint.webp"
+                  alt="Da Vinci Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Image Editor"
+                  description="Editor de imagens. Faça o upload, edite e baixe!"
+                  techno="HTML5 + CSS3 + JavaScript"
+                  href="https://renanmattosguerra.github.io/Portfolio/ImageEditor/index.html"
+                  src="/images/projects/imageeditorprint.webp"
+                  alt="Image Editor Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Stellar Vision"
+                  description="Site de uma empresa fictícia de viagem ao espaço"
+                  techno="ReactJS"
+                  href="https://stellarvision-renanguerra.netlify.app/"
+                  src="/images/projects/stellarvisionprint.webp"
+                  alt="Stellar Vision Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Music Player"
+                  description="Reprodutor de música"
+                  techno="HTML5 + CSS3 + JavaScript"
+                  href="https://renanmattosguerra.github.io/Portfolio/MusicPlayer/index.html"
+                  src="/images/projects/musicplayerprint.webp"
+                  alt="Music Player Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Tela de Login"
+                  description="Formulário de login"
+                  techno="HTML5 + CSS3 + JavaScript"
+                  href="https://renanmattosguerra.github.io/Portfolio/TelaLogin/TelaLogin.html"
+                  src="/images/projects/loginprint.webp"
+                  alt="Login Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Aquarium"
+                  description="Selecione os peixes e adicione no seu aquário"
+                  techno="HTML5 + CSS3 + JavaScript"
+                  href="https://renanmattosguerra.github.io/Portfolio/Aquarium/aquarium.html"
+                  src="/images/projects/aquariumpage.webp"
+                  alt="Aquarium Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Jump Game"
+                  description="Desvie da cobra! Jogo de browser. Apenas desktop"
+                  techno="HTML5 + CSS3 + JavaScript"
+                  href="https://renanmattosguerra.github.io/Portfolio/jumpgame/jumpgame.html"
+                  src="/images/projects/jumpgameprint.webp"
+                  alt="Jump Game Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Harry Potter Lore API"
+                  description="Integração com uma API de Harry Potter"
+                  techno="HTML5 + CSS3 + JavaScript + API"
+                  href="https://renanmattosguerra.github.io/Portfolio/HarryPotterLoreApi/index.html"
+                  src="/images/projects/harrypotterprint.webp"
+                  alt="Harry Potter Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
+                  title="Sports Store"
+                  description="Loja fictícia de produtos esportivos. Landing Page"
+                  techno="HTML5 + CSS3 + JavaScript"
+                  href="https://renanmattosguerra.github.io/Portfolio/SportsStore/index.html"
+                  src="/images/projects/sportsprint.webp"
+                  alt="Sports Store Page"
+                ></Project>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="pointer-events-none flex justify-between items-center max-230 m-auto w-full relative bottom-65">
+          <button
+            onClick={scrollPrev}
+            type="button"
+            title="scrollPrev"
+            className="embla__prev pointer-events-auto text-(--color-secondary) bg-(--color-text) rounded-full transition-colors hover:bg-(--color-primary) hover:text-(--color-text) cursor-pointer leading-none w-9 h-9 flex justify-center items-center relative lg:right-8"
+          >
+            <ChevronLeft />
+          </button>
+          <button
+            onClick={scrollNext}
+            type="button"
+            title="scrollNext"
+            className="embla__next pointer-events-auto text-(--color-secondary) bg-(--color-text) rounded-full transition-colors hover:bg-(--color-primary) hover:text-(--color-text) cursor-pointer leading-none w-9 h-9 flex justify-center items-center relative lg:left-8"
+          >
+            <ChevronRight />
+          </button>
+        </div>
+      </section>
+      <section
+        id="contact"
+        className="w-full max-w-230 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
+      >
+        <Heading title="Contato"></Heading>
+
+        <div className="flex w-full gap-xxl flex-col lg:flex-row justify-center items-start">
+          <div className="flex flex-col gap-xl lg:w-1/2 w-full">
+            <h3 className="text-size-xl font-heading text-(--color-text) font-bold">
+              Estou em busca de novas oportunidades
+            </h3>
+            <p className="text-size-md font-text text-(--color-text-muted)">
+              Disponível para atuação integral ou freelancer, presencial ou
+              remota
+            </p>
+            <span className="flex flex-col gap-lg">
+              <a
+                href="mailto:rguerra1998@gmail.com"
+                title="Email"
+                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+              >
+                <Mail></Mail> rguerra1998@gmail.com <Link></Link>
+              </a>
+              <a
+                href="https://wa.me/5521998754318"
+                title="Whats App"
+                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                target="_blank"
+                rel="noopener"
+              >
+                <MessageCircle></MessageCircle> +55 (21) 99875-4318
+                <Link></Link>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/renan-mattos-guerra/"
+                title="Linkedin"
+                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                target="_blank"
+                rel="noopener"
+              >
+                <Linkedin></Linkedin> @renanmattosguerra
+                <ExternalLink></ExternalLink>
+              </a>
+              <a
+                href="https://github.com/RenanMattosGuerra"
+                title="Github"
+                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                target="_blank"
+                rel="noopener"
+              >
+                <Github></Github> @RenanMattosGuerra
+                <ExternalLink></ExternalLink>
+              </a>
+            </span>
+          </div>
+          <form
+            action="https://formsubmit.co/ed8d32be398180a03ab882855fb43a29"
+            method="POST"
+            className="flex flex-col w-full lg:w-1/2 gap-sm font-text bg-(--color-primary) p-xl rounded-4xl text-(--color-text)"
+          >
+            <label htmlFor="name">Nome :</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+              required
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <label htmlFor="email">E-mail :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="E-mail"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+            />
+            <label htmlFor="subject">Assunto :</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              required
+              placeholder="Assunto"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+            />
+            <label htmlFor="message">Mensagem :</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Mensagem"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 min-h-30 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              value="Enviar"
+              className="p-2 bg-(--color-text) rounded-xl cursor-pointer transition-all duration-200 text-(--color-secondary) hover:bg-(--color-secondary) hover:text-(--color-text) font-bold"
+            />
+          </form>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
