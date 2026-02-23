@@ -38,7 +38,7 @@ export default function About() {
       <section className="w-full flex flex-col justify-center items-center gap-xxl pt-xxl px-sm">
         <Heading title="Formação"></Heading>
 
-        <div className="absolute m-auto top-350 lg:top-255 w-2 h-138 bg-linear-to-b from-gradient to-(--color-primary) rounded-md z-0">
+        <div className="absolute m-auto top-362 sm:top-350 lg:top-255 w-2 h-138 bg-linear-to-b from-gradient to-(--color-primary) rounded-md z-0">
           <div className="w-6 h-6 rounded-full bg-(--color-text) shadow-lg shadow-gray-500 relative top-12 right-2 flex justify-center items-center"></div>
           <div className="w-6 h-6 rounded-full bg-(--color-text) shadow-lg shadow-gray-500 relative top-60 right-2 flex justify-center items-center"></div>
           <div className="w-6 h-6 rounded-full bg-(--color-text) shadow-lg shadow-gray-500 relative top-106 right-2 flex justify-center items-center"></div>

@@ -17,7 +17,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="cursor-pointer text-(--color-text) transition-all duration-200 hover:scale-110 hover:text-(--color-primary)"
+      className="cursor-pointer text-(--color-text) transition-all duration-200 hover:scale-120 hover:text-(--color-primary)"
     >
       {theme === "dark" ? <Sun /> : <Moon />}
     </button>
