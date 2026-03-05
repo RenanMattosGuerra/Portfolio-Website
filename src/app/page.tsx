@@ -30,7 +30,7 @@ export default function Home() {
     <main className="flex-1 flex flex-col gap-xxl pb-xxl">
       <section className="m-auto w-full my-xxl max-w-300 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-lg">
         <section className="flex flex-col gap-lg" data-aos="zoom-in">
-          <span className="font-text text-(--color-text-muted) text-size-md">
+          <span className="font-text text-(--color-text-muted) text-size-md lg:text-size-lg">
             Desenvolvedor Front-End
           </span>
           <h1 className="font-heading font-semibold text-size-xl lg:text-size-xxl text-(--color-text)">
@@ -62,7 +62,7 @@ export default function Home() {
           alt="Renan Guerra"
           width={270}
           height={270}
-          className="object-cover object-center rounded-3xl shadow-lg"
+          className="object-cover object-center rounded-xl shadow-lg"
           data-aos="zoom-in"
         ></Image>
       </section>
@@ -275,24 +275,24 @@ export default function Home() {
               <a
                 href="mailto:rguerra1998@gmail.com"
                 title="Email"
-                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                className="flex justify-evenly items-center text-size-sm p-3 bg-(--color-secondary) text-(--color-text) rounded-full transition-all duration-200  border-2 border-(--color-border) hover:border-(--color-primary)"
               >
                 <Mail></Mail> rguerra1998@gmail.com <Link></Link>
               </a>
               <a
                 href="https://wa.me/5521998754318"
                 title="Whats App"
-                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                className="flex justify-evenly items-center text-size-sm p-3 bg-(--color-secondary) text-(--color-text) rounded-full transition-all duration-200  border-2 border-(--color-border) hover:border-(--color-primary)"
                 target="_blank"
                 rel="noopener"
               >
                 <MessageCircle></MessageCircle> +55 (21) 99875-4318
-                <Link></Link>
+                <ExternalLink></ExternalLink>
               </a>
               <a
                 href="https://www.linkedin.com/in/renan-mattos-guerra/"
                 title="Linkedin"
-                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                className="flex justify-evenly items-center text-size-sm p-3 bg-(--color-secondary) text-(--color-text) rounded-full transition-all duration-200  border-2 border-(--color-border) hover:border-(--color-primary)"
                 target="_blank"
                 rel="noopener"
               >
@@ -302,7 +302,7 @@ export default function Home() {
               <a
                 href="https://github.com/RenanMattosGuerra"
                 title="Github"
-                className="flex justify-evenly items-center text-size-sm p-2 bg-(--color-text) text-(--color-secondary) rounded-full transition-all duration-200 hover:bg-(--color-secondary) hover:text-(--color-text) border border-transparent hover:border-(--color-primary)"
+                className="flex justify-evenly items-center text-size-sm p-3 bg-(--color-secondary) text-(--color-text) rounded-full transition-all duration-200  border-2 border-(--color-border) hover:border-(--color-primary)"
                 target="_blank"
                 rel="noopener"
               >
@@ -314,7 +314,7 @@ export default function Home() {
           <form
             action="https://formsubmit.co/ed8d32be398180a03ab882855fb43a29"
             method="POST"
-            className="flex flex-col w-full lg:w-1/2 gap-sm font-text bg-(--color-primary) p-xl rounded-4xl text-(--color-text)"
+            className="flex flex-col w-full lg:w-1/2 gap-sm font-text bg-(--color-light-background) p-lg rounded-xl text-(--color-text) border-2 border-(--color-border)"
           >
             <label htmlFor="name">Nome :</label>
             <input
@@ -322,7 +322,7 @@ export default function Home() {
               name="name"
               id="name"
               placeholder="Nome"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
               required
             />
             <label htmlFor="email">E-mail :</label>
@@ -332,7 +332,7 @@ export default function Home() {
               id="email"
               required
               placeholder="E-mail"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
             />
             <label htmlFor="subject">Assunto :</label>
             <input
@@ -341,14 +341,14 @@ export default function Home() {
               id="subject"
               required
               placeholder="Assunto"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
             />
             <label htmlFor="message">Mensagem :</label>
             <textarea
               name="message"
               id="message"
               placeholder="Mensagem"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 min-h-30 focus-within:scale-102 transition-all duration-200 focus-within:bg-blue-500"
+              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 min-h-30 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
               required
             ></textarea>
             <input

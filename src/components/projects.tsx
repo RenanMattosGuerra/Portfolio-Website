@@ -23,7 +23,7 @@ export function Project({
       href={href}
       title={title}
       target="_blank"
-      className="bg-(--color-light-background) flex flex-col p-md rounded-lg gap-sm shadow-xl w-70 h-90 transition-all duration-400 hover:bg-(--color-secondary) border border-(--color-light-background) hover:border-(--color-text-muted)"
+      className="bg-(--color-light-background) flex flex-col p-md rounded-lg gap-sm shadow-xl w-70 h-90 transition-all duration-400 hover:bg-(--color-secondary) border-2 border-(--color-light-background) hover:border-(--color-text-muted)"
     >
       <div className="flex justify-center items-center w-full h-45 rounded-lg overflow-hidden relative">
         <Image
