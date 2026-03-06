@@ -321,8 +321,8 @@ export default function Home() {
               type="text"
               name="name"
               id="name"
-              placeholder="Nome"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
+              placeholder="Seu nome"
+              className="p-2 border-b-2 border-(--color-text) rounded-t-md outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
               required
             />
             <label htmlFor="email">E-mail :</label>
@@ -331,8 +331,8 @@ export default function Home() {
               name="email"
               id="email"
               required
-              placeholder="E-mail"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
+              placeholder="Seu e-mail"
+              className="p-2 border-b-2 border-(--color-text) rounded-t-md outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
             />
             <label htmlFor="subject">Assunto :</label>
             <input
@@ -340,15 +340,15 @@ export default function Home() {
               name="subject"
               id="subject"
               required
-              placeholder="Assunto"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
+              placeholder="Assunto que deseja abordar"
+              className="p-2 border-b-2 border-(--color-text) rounded-t-md outline-0 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
             />
             <label htmlFor="message">Mensagem :</label>
             <textarea
               name="message"
               id="message"
-              placeholder="Mensagem"
-              className="rounded-xl p-2 border-2 border-(--color-text) outline-0 min-h-30 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
+              placeholder="Digite sua mensagem"
+              className="p-2 border-b-2 border-(--color-text) rounded-t-md outline-0 min-h-30 focus-within:scale-102 transition-all duration-200 focus-within:bg-(--color-border)"
               required
             ></textarea>
             <input
