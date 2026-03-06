@@ -12,6 +12,8 @@ import {
   Link,
   MessageCircle,
   ExternalLink,
+  Download,
+  ChevronDown,
 } from "lucide-react";
 import { Project } from "@/components/projects";
 import { Heading } from "@/components/headings";
@@ -40,20 +42,20 @@ export default function Home() {
             Next.JS - TypeScript - TailwindCSS <br /> React - HTML5 - CSS3 -
             JavaScript
           </p>
-          <div className="flex gap-sm w-full justify-between items-center font-heading text-sm">
+          <div className="flex w-full justify-between items-center font-heading text-sm gap-xs">
             <a
               href="/assets/CV_RenanGuerra.pdf"
               download="CV_RenanGuerra.pdf"
               type="application/pdf"
-              className="w-1/2 text-center p-2 shadow-md bg-linear-to-br from-gradient to-(--color-primary) rounded-md transition-all hover:scale-105 duration-300 text-(--color-secondary) font-semibold hover:from-(--color-primary) hover:to-gradient"
+              className="w-35 text-center flex justify-between items-center p-2 shadow-md bg-linear-to-br from-gradient to-(--color-primary) rounded-md transition-all hover:scale-105 duration-300 text-(--color-secondary) font-semibold hover:from-(--color-primary) hover:to-gradient"
             >
-              Download CV
+              Download CV <Download></Download>
             </a>
             <a
               href="#proj"
-              className="w-1/2 text-center bg-(--color-secondary) p-2 shadow-md rounded-md transition-all hover:scale-105 duration-300 border border-(--color-secondary) text-(--color-text) hover:border-(--color-primary)"
+              className="w-35 text-center bg-(--color-secondary) flex justify-between items-center p-2 shadow-md rounded-md transition-all hover:scale-105 duration-300 border border-(--color-secondary) text-(--color-text) hover:border-(--color-primary)"
             >
-              Projetos
+              Projetos <ChevronDown></ChevronDown>
             </a>
           </div>
         </section>
