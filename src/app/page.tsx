@@ -32,15 +32,19 @@ export default function Home() {
     <main className="flex-1 flex flex-col gap-xxl pb-xxl">
       <section className="m-auto w-full my-xxl max-w-300 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-lg">
         <section className="flex flex-col gap-lg" data-aos="zoom-in">
-          <span className="font-text text-(--color-text-muted) text-size-md lg:text-size-lg">
+          <span className="font-text text-(--color-text-muted) font-semibold text-size-md lg:text-size-lg">
             Desenvolvedor Front-End
           </span>
           <h1 className="font-heading font-semibold text-size-xl lg:text-size-xxl text-(--color-text)">
             Sou Renan Guerra
           </h1>
-          <p className="font-text text-size-md text-(--color-text-muted)">
-            Next.JS - TypeScript - TailwindCSS <br /> React - HTML5 - CSS3 -
-            JavaScript
+          <p className="font-text text-size-md lg:text-size-lg text-(--color-text-muted) max-w-92 text-justify">
+            Transformo ideias em interfaces{" "}
+            <span className="text-(--color-primary) font-bold">
+              modernas, acessíveis e performáticas
+            </span>
+            , criando experiências digitais intuitivas através de código limpo e
+            atenção aos detalhes.
           </p>
           <div className="flex w-full justify-between items-center font-heading text-sm gap-xs">
             <a

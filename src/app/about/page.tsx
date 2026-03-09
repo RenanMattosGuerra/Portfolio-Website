@@ -8,7 +8,7 @@ export default function About() {
         <Heading title="Sobre Mim"></Heading>
 
         <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-xxl">
-          <article className="p-md border-2 border-(--color-text-muted) rounded-lg shadow-md shadow-gray-700 bg-(--color-backtext-2)">
+          <article className="p-md border-2 border-(--color-text-muted) rounded-br-3xl rounded-tl-3xl shadow-md shadow-gray-700 bg-(--color-backtext-2)">
             <p className="font-text text-(--color-text) max-w-90 text-justify indent-lg">
               Desenvolvedor Front-End com experiência em criação de interfaces e
               páginas web responsivas e mobile first, utilizando NextJS,
@@ -45,7 +45,7 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 grid-rows-3 gap-y-xxl gap-x-0 w-full max-w-180 justify-items-center lg:grid-cols-[1fr_2px_1fr] z-20">
-          <article className="border-2 border-(--color-text-muted) p-md rounded-xl max-w-76 shadow-md shadow-gray-800 bg-(--color-backtext-2) lg:col-start-3 transition-all duration-300 hover:scale-105 hover:bg-(--color-backtext-1) hover:shadow-gray-700">
+          <article className="border-2 border-(--color-text-muted) p-md rounded-br-3xl rounded-tl-3xl max-w-76 shadow-md shadow-gray-800 bg-(--color-backtext-2) lg:col-start-3 transition-all duration-300 hover:scale-105 hover:bg-(--color-backtext-1) hover:shadow-gray-700">
             <h3 className="font-heading text-(--color-text) font-semibold">
               Graduação em Sistemas de Informação
             </h3>
@@ -55,7 +55,7 @@ export default function About() {
             <p className="font-text">Faculdade Estácio de Sá</p>
           </article>
 
-          <article className="border-2 border-(--color-text-muted) p-md rounded-xl max-w-76 shadow-md shadow-gray-800 bg-(--color-backtext-2) lg:col-start-1 transition-all duration-300 hover:scale-105 hover:bg-(--color-backtext-1) hover:shadow-gray-700">
+          <article className="border-2 border-(--color-text-muted) p-md rounded-tr-3xl rounded-bl-3xl max-w-76 shadow-md shadow-gray-800 bg-(--color-backtext-2) lg:col-start-1 transition-all duration-300 hover:scale-105 hover:bg-(--color-backtext-1) hover:shadow-gray-700">
             <h3 className="font-heading text-(--color-text) font-semibold">
               Cursos HTML5, CSS3, Javascript e Git/Github
             </h3>
@@ -65,7 +65,7 @@ export default function About() {
             <p className="font-text">Curso em Vídeo</p>
           </article>
 
-          <article className="border-2 border-(--color-text-muted) p-md rounded-xl max-w-76 shadow-md shadow-gray-800 bg-(--color-backtext-2) lg:col-start-3 lg:row-start-3 transition-all duration-300 hover:scale-105 hover:bg-(--color-backtext-1) hover:shadow-gray-700">
+          <article className="border-2 border-(--color-text-muted) p-md rounded-br-3xl rounded-tl-3xl max-w-76 shadow-md shadow-gray-800 bg-(--color-backtext-2) lg:col-start-3 lg:row-start-3 transition-all duration-300 hover:scale-105 hover:bg-(--color-backtext-1) hover:shadow-gray-700">
             <h3 className="font-heading text-(--color-text) font-semibold">
               Cursos ReactJS, Tailwind e Figma
             </h3>
