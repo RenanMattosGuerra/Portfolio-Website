@@ -262,6 +262,30 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+      <section
+        id="performance"
+        className="w-full max-w-230 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
+      >
+        <Heading title="Desempenho"></Heading>
+        <div className="flex flex-col lg:flex-row gap-xs w-full justify-center items-center">
+          <Image
+            src="/images/performancePC.webp"
+            alt="Desktop Performance"
+            width={600}
+            height={600}
+            className="rounded-lg shadow-lg lg:w-1/2 lg:h-72 transition-all duration-300 hover:-translate-y-3"
+          ></Image>
+          <Image
+            src="/images/performanceMOBILE.webp"
+            alt="Mobile Performance"
+            width={600}
+            height={600}
+            className="rounded-lg shadow-lg lg:w-1/2 lg:h-72 transition-all duration-300 lg:hover:-translate-y-3 hover:translate-y-3"
+          ></Image>
+        </div>
+      </section>
+
       <section
         id="contact"
         className="w-full max-w-230 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
