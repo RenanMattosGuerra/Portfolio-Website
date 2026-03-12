@@ -265,10 +265,14 @@ export default function Home() {
 
       <section
         id="performance"
-        className="w-full max-w-260 flex flex-col p-md m-auto gap-xxl"
+        className="w-full max-w-260 flex flex-col lg:p-md m-auto gap-xl"
       >
         <Heading title="Desempenho"></Heading>
-        <div className="flex flex-col gap-xl w-full justify-center items-center p-md">
+        <p className="font-text text-(--color-text-muted) p-xs lg:p-0 text-justify">
+          Sites de alta performance, acessibilidade e otimizados para
+          posicionamento e visibilidade em mecanismos de busca.
+        </p>
+        <div className="flex flex-col gap-xl w-full justify-center items-center p-2">
           <Image
             src="/images/performancePC.webp"
             alt="Desktop Performance"
