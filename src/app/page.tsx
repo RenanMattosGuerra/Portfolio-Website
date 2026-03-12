@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="flex-1 flex flex-col gap-xxl pb-xxl">
-      <section className="m-auto w-full my-xxl max-w-300 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-lg">
+      <section className="m-auto w-full my-xxl max-w-412 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-lg">
         <section className="flex flex-col gap-lg" data-aos="zoom-in">
           <span className="font-text text-(--color-text-muted) font-semibold text-size-md lg:text-size-lg">
             Desenvolvedor Front-End
@@ -38,9 +38,9 @@ export default function Home() {
           <h1 className="font-heading font-semibold text-size-xl lg:text-size-xxl text-(--color-text)">
             Sou Renan Guerra
           </h1>
-          <p className="font-text text-size-md lg:text-size-lg text-(--color-text-muted) max-w-92 text-justify">
+          <p className="font-text text-size-md lg:text-size-lg text-(--color-text-muted) max-w-100 text-justify">
             Transformo ideias em interfaces{" "}
-            <span className="text-(--color-primary) font-bold">
+            <span className="text-(--color-primary) font-semibold">
               modernas, acessíveis e performáticas
             </span>
             , criando experiências digitais intuitivas através de código limpo e
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
       <section
         id="skills"
-        className="m-auto flex flex-col justify-center max-w-230 gap-xxl lg:w-full mb-xxl"
+        className="m-auto flex flex-col justify-center max-w-260 gap-xxl lg:w-full mb-xxl"
         data-aos="fade-up"
       >
         <Heading title="Habilidades"></Heading>
@@ -130,7 +130,7 @@ export default function Home() {
 
       <section
         id="proj"
-        className="m-auto flex flex-col justify-center w-full max-w-230 gap-xxl"
+        className="m-auto flex flex-col justify-center w-full max-w-260 gap-xxl"
       >
         <Heading title="Projetos"></Heading>
 
@@ -243,7 +243,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pointer-events-none flex justify-between items-center max-230 m-auto w-full relative bottom-65">
+        <div className="pointer-events-none flex justify-between items-center max-260 m-auto w-full relative bottom-65">
           <button
             onClick={scrollPrev}
             type="button"
@@ -265,30 +265,30 @@ export default function Home() {
 
       <section
         id="performance"
-        className="w-full max-w-230 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
+        className="w-full max-w-260 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
       >
         <Heading title="Desempenho"></Heading>
         <div className="flex flex-col lg:flex-row gap-xs w-full justify-center items-center">
           <Image
-            src="/images/performancePC.webp"
+            src="/images/pc3.webp"
             alt="Desktop Performance"
-            width={600}
-            height={600}
-            className="rounded-lg shadow-lg lg:w-1/2 lg:h-72 transition-all duration-300 hover:-translate-y-3"
+            width={890}
+            height={587}
+            className="object-cover object-center rounded-lg shadow-lg lg:w-1/2 transition-all duration-300 hover:-translate-y-3"
           ></Image>
           <Image
-            src="/images/performanceMOBILE.webp"
+            src="/images/mobile3.webp"
             alt="Mobile Performance"
-            width={600}
-            height={600}
-            className="rounded-lg shadow-lg lg:w-1/2 lg:h-72 transition-all duration-300 lg:hover:-translate-y-3 hover:translate-y-3"
+            width={890}
+            height={587}
+            className="object-cover object-center rounded-lg shadow-lg lg:w-1/2 transition-all duration-300 lg:hover:-translate-y-3 hover:translate-y-3"
           ></Image>
         </div>
       </section>
 
       <section
         id="contact"
-        className="w-full max-w-230 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
+        className="w-full max-w-260 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
       >
         <Heading title="Contato"></Heading>
 

@@ -7,9 +7,9 @@ export default function About() {
       <section className="w-full flex flex-col justify-center items-center gap-xxl pt-xxl px-sm">
         <Heading title="Sobre Mim"></Heading>
 
-        <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-xxl">
-          <article className="p-md border-2 border-(--color-text-muted) rounded-br-3xl rounded-tl-3xl shadow-md shadow-gray-700 bg-(--color-backtext-2)">
-            <p className="font-text text-(--color-text) max-w-90 text-justify indent-lg">
+        <div className="flex flex-col lg:flex-row-reverse justify-evenly items-center max-w-400 w-full">
+          <article className="p-md border-2 border-(--color-text-muted) rounded-br-3xl rounded-tl-3xl shadow-md shadow-gray-700 bg-(--color-backtext-2) hover:-translate-y-3 transition-all duration-300">
+            <p className="font-text text-(--color-text) max-w-90 text-justify indent-lg ">
               Desenvolvedor Front-End com experiência em criação de interfaces e
               páginas web responsivas e mobile first, utilizando NextJS,
               ReactJS, TailwindCSS, HTML5 semântico, CSS3, TypeScript,
