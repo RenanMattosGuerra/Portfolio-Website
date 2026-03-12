@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="flex-1 flex flex-col gap-xxl pb-xxl">
-      <section className="m-auto w-full my-xxl max-w-412 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-lg">
+      <section className="m-auto w-full my-xxl max-w-375 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-md">
         <section className="flex flex-col gap-lg" data-aos="zoom-in">
           <span className="font-text text-(--color-text-muted) font-semibold text-size-md lg:text-size-lg">
             Desenvolvedor Front-End
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
       <section
         id="skills"
-        className="m-auto flex flex-col justify-center max-w-260 gap-xxl lg:w-full mb-xxl"
+        className="m-auto flex flex-col justify-center max-w-260 gap-xxl lg:w-full mb-xxl p-md"
         data-aos="fade-up"
       >
         <Heading title="Habilidades"></Heading>
@@ -130,7 +130,7 @@ export default function Home() {
 
       <section
         id="proj"
-        className="m-auto flex flex-col justify-center w-full max-w-260 gap-xxl"
+        className="m-auto flex flex-col justify-center w-full max-w-260 gap-xxl p-md"
       >
         <Heading title="Projetos"></Heading>
 
@@ -248,7 +248,7 @@ export default function Home() {
             onClick={scrollPrev}
             type="button"
             title="scrollPrev"
-            className="embla__prev pointer-events-auto text-(--color-secondary) bg-(--color-text) rounded-full transition-colors hover:bg-(--color-primary) hover:text-(--color-text) cursor-pointer leading-none w-9 h-9 flex justify-center items-center relative lg:right-8"
+            className="embla__prev pointer-events-auto text-(--color-secondary) bg-(--color-text) rounded-full transition-colors hover:bg-(--color-primary) hover:text-(--color-text) cursor-pointer leading-none w-9 h-9 flex justify-center items-center relative lg:right-4 xl:right-8"
           >
             <ChevronLeft />
           </button>
@@ -256,7 +256,7 @@ export default function Home() {
             onClick={scrollNext}
             type="button"
             title="scrollNext"
-            className="embla__next pointer-events-auto text-(--color-secondary) bg-(--color-text) rounded-full transition-colors hover:bg-(--color-primary) hover:text-(--color-text) cursor-pointer leading-none w-9 h-9 flex justify-center items-center relative lg:left-8"
+            className="embla__next pointer-events-auto text-(--color-secondary) bg-(--color-text) rounded-full transition-colors hover:bg-(--color-primary) hover:text-(--color-text) cursor-pointer leading-none w-9 h-9 flex justify-center items-center relative lg:left-4 xl:left-8"
           >
             <ChevronRight />
           </button>
@@ -265,30 +265,30 @@ export default function Home() {
 
       <section
         id="performance"
-        className="w-full max-w-260 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
+        className="w-full max-w-260 flex flex-col p-md m-auto gap-xxl"
       >
         <Heading title="Desempenho"></Heading>
-        <div className="flex flex-col lg:flex-row gap-xs w-full justify-center items-center">
+        <div className="flex flex-col gap-xl w-full justify-center items-center p-md">
           <Image
-            src="/images/pc3.webp"
+            src="/images/performancePC.webp"
             alt="Desktop Performance"
-            width={890}
+            width={770}
             height={587}
-            className="object-cover object-center rounded-lg shadow-lg lg:w-1/2 transition-all duration-300 hover:-translate-y-3"
+            className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-2 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
           ></Image>
           <Image
-            src="/images/mobile3.webp"
+            src="/images/performanceMobile.webp"
             alt="Mobile Performance"
-            width={890}
+            width={770}
             height={587}
-            className="object-cover object-center rounded-lg shadow-lg lg:w-1/2 transition-all duration-300 lg:hover:-translate-y-3 hover:translate-y-3"
+            className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-2 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
           ></Image>
         </div>
       </section>
 
       <section
         id="contact"
-        className="w-full max-w-260 flex flex-col p-xl lg:p-0 m-auto gap-xxl"
+        className="w-full max-w-260 flex flex-col p-xl lg:p-md m-auto gap-xxl"
       >
         <Heading title="Contato"></Heading>
 

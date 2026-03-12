@@ -49,7 +49,7 @@ export default function About() {
             <h3 className="font-heading text-(--color-text) font-semibold">
               Graduação em Sistemas de Informação
             </h3>
-            <span className="font-text text-(--color-primary)">
+            <span className="font-text text-(--color-primary) font-semibold">
               2017 - 2023
             </span>
             <p className="font-text">Faculdade Estácio de Sá</p>
@@ -59,7 +59,7 @@ export default function About() {
             <h3 className="font-heading text-(--color-text) font-semibold">
               Cursos HTML5, CSS3, Javascript e Git/Github
             </h3>
-            <span className="font-text text-(--color-primary)">
+            <span className="font-text text-(--color-primary) font-semibold">
               2024 - 2025
             </span>
             <p className="font-text">Curso em Vídeo</p>
@@ -69,7 +69,7 @@ export default function About() {
             <h3 className="font-heading text-(--color-text) font-semibold">
               Cursos ReactJS, Tailwind e Figma
             </h3>
-            <span className="font-text text-(--color-primary)">
+            <span className="font-text text-(--color-primary) font-semibold">
               2025 - 2026
             </span>
             <p className="font-text">Udemy</p>
