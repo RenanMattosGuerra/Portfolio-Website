@@ -274,14 +274,14 @@ export default function Home() {
         </p>
         <div className="flex flex-col gap-xl w-full justify-center items-center p-2">
           <Image
-            src="/images/performancePC.webp"
+            src="/images/pcprint.webp"
             alt="Desktop Performance"
             width={770}
             height={587}
             className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-2 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
           ></Image>
           <Image
-            src="/images/performanceMOBILE.webp"
+            src="/images/mobileprint.webp"
             alt="Mobile Performance"
             width={770}
             height={587}
