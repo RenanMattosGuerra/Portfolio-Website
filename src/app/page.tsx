@@ -281,7 +281,7 @@ export default function Home() {
             className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-2 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
           ></Image>
           <Image
-            src="/images/performanceMobile.webp"
+            src="/images/performanceMOBILE.webp"
             alt="Mobile Performance"
             width={770}
             height={587}
