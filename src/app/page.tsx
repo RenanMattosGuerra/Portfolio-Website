@@ -268,7 +268,7 @@ export default function Home() {
         className="w-full max-w-260 flex flex-col lg:p-md m-auto gap-xl"
       >
         <Heading title="Desempenho"></Heading>
-        <p className="font-text text-(--color-text-muted) p-xs lg:p-0 text-justify">
+        <p className="font-text text-(--color-text-muted) p-xs lg:p-0 text-center lg:text-justify">
           Sites de alta performance, acessibilidade e otimizados para
           posicionamento e visibilidade em mecanismos de busca.
         </p>
@@ -278,14 +278,14 @@ export default function Home() {
             alt="Desktop Performance"
             width={770}
             height={587}
-            className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-2 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
+            className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-3 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
           ></Image>
           <Image
             src="/images/mobileprint.webp"
             alt="Mobile Performance"
             width={770}
             height={587}
-            className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-2 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
+            className="object-cover object-center rounded-lg shadow-lg transition-all duration-300 border-3 border-(--color-border) hover:-translate-y-3 hover:border-(--color-primary)"
           ></Image>
         </div>
       </section>
