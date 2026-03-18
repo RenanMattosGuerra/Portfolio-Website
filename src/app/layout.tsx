@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     title: "Portfolio - Renan Guerra",
     description: "Front-end Developer Portfolio",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
