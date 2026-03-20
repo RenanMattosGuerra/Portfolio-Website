@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ThemeToggle } from "./mode";
+import { ThemeToggle } from "../elements/mode";
 
 export function Header() {
   return (

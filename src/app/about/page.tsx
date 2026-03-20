@@ -1,4 +1,4 @@
-import { Heading } from "@/components/headings";
+import { Heading } from "@/components/elements/headings";
 import Image from "next/image";
 
 export default function About() {

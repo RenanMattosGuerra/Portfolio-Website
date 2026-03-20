@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Skill } from "@/components/skills";
+import { Skill } from "@/components/elements/skills";
 import useEmblaCarousel from "embla-carousel-react";
 import {
   ChevronLeft,
@@ -15,8 +15,8 @@ import {
   Download,
   ChevronDown,
 } from "lucide-react";
-import { Project } from "@/components/projects";
-import { Heading } from "@/components/headings";
+import { Project } from "@/components/elements/projects";
+import { Heading } from "@/components/elements/headings";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({

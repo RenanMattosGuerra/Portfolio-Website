@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Zalando_Sans, Roboto } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { AosInit } from "@/components/aos-init";
-import { Providers } from "@/components/providers";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { AosInit } from "@/components/providers/aos-init";
+import { Providers } from "@/components/providers/providers";
 
 export const zalando = Zalando_Sans({
   variable: "--font-zalando",
