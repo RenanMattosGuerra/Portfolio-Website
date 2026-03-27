@@ -29,8 +29,8 @@ export function Footer() {
           </a>
         </span>
         <p>
-          © Copyright 2026 Renan Guerra Portfolio - Built with Next.JS |
-          Tailwind | Typescript
+          © Copyright 2026 Renan Guerra Portfolio - Feito com Next.JS | Tailwind
+          | Typescript
         </p>
       </div>
     </footer>
