@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="flex-1 flex flex-col gap-xxl pb-xxl">
-      <section className="m-auto w-full my-xxl max-w-375 flex flex-col-reverse md:flex-row justify-evenly items-center gap-xxl p-md">
+      <section className="m-auto w-full my-xxl max-w-375 flex flex-col md:flex-row justify-evenly items-center gap-xxl p-md">
         <section className="flex flex-col gap-lg" data-aos="zoom-in">
           <span className="font-text text-(--color-text-muted) font-semibold text-size-md lg:text-size-lg">
             Desenvolvedor Front-End
