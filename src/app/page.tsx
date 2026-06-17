@@ -152,6 +152,16 @@ export default function Home() {
               </div>
               <div className="embla__slide flex-[0_0_auto] mr-lg">
                 <Project
+                  title="The Dev Mage"
+                  description="Aplicação web didática sobre desenvolvimento Front-End, inspirada em jogos RPG. Em construção..."
+                  techno="NextJS + TypeScript + TailwindCSS"
+                  href="https://the-dev-mage.vercel.app/"
+                  src="/images/projects/mageprint.webp"
+                  alt="The Dev Mage Page"
+                ></Project>
+              </div>
+              <div className="embla__slide flex-[0_0_auto] mr-lg">
+                <Project
                   title="Da Vinci Website"
                   description="E se Leonardo Da Vinci tivesse um site hoje em dia? Loja e Landing Page"
                   techno="NextJS + TypeScript + TailwindCSS"
