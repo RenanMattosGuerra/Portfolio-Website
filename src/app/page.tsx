@@ -125,6 +125,11 @@ export default function Home() {
             logo="/images/icons/icons8-figma.svg"
             alt="Figma logo"
           ></Skill>
+          <Skill
+            name="Excel"
+            logo="/images/icons/icons8-microsoft-excel-2019.svg"
+            alt="Microsoft Excel logo"
+          ></Skill>
         </div>
       </section>
 
