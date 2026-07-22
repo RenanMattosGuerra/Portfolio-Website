@@ -48,8 +48,8 @@ export default function Home() {
           </p>
           <div className="flex w-full justify-between items-center font-heading text-sm gap-xs">
             <a
-              href="/assets/CV_RenanGuerra.pdf"
-              download="CV_RenanGuerra.pdf"
+              href="/assets/renan-guerra-cv-dev.pdf"
+              download="renan-guerra-cv-dev.pdf"
               type="application/pdf"
               className="w-35 text-center flex justify-between items-center p-2 shadow-md bg-linear-to-br from-gradient to-(--color-primary) rounded-md transition-all hover:scale-105 duration-300 text-(--color-secondary) font-semibold hover:from-(--color-primary) hover:to-gradient"
             >
