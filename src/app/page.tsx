@@ -329,16 +329,6 @@ export default function Home() {
                 <Mail></Mail> rguerra1998@gmail.com <Link></Link>
               </a>
               <a
-                href="https://wa.me/5521998754318"
-                title="Whats App"
-                className="flex justify-evenly items-center text-size-sm p-3 bg-(--color-secondary) text-(--color-text) rounded-full transition-all duration-200  border-2 border-(--color-border) hover:border-(--color-primary)"
-                target="_blank"
-                rel="noopener"
-              >
-                <MessageCircle></MessageCircle> +55 (21) 99875-4318
-                <ExternalLink></ExternalLink>
-              </a>
-              <a
                 href="https://www.linkedin.com/in/renan-mattos-guerra/"
                 title="Linkedin"
                 className="flex justify-evenly items-center text-size-sm p-3 bg-(--color-secondary) text-(--color-text) rounded-full transition-all duration-200  border-2 border-(--color-border) hover:border-(--color-primary)"
